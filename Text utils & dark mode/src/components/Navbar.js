@@ -74,6 +74,7 @@ export default function Navbar(props) {
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                style={{ backgroundColor: props.mode === "dark" ? "#404040" : "white"}}
               />
               <button className="btn btn-outline-success" type="submit">
                 Search
