@@ -8,18 +8,21 @@ import React, { useState } from "react";
 function App() {
   const [mode, setmode] = useState("light");
 const [state, setstate] = useState("")
+const [enable, seteanble] = useState("enable dark mode")
  
 const togglemode = () => {
     if (mode ==="light") {
       setmode("dark");
    document.body.style.backgroundColor="#262626"
    setstate("bg-dark")
+   seteanble("Disable dark mode")
     }
     else{
       setmode("light");
    document.body.style.backgroundColor="white"
    setstate("")
-     
+   seteanble("Enable dark mode")
+
     }
   };
   return (
@@ -31,6 +34,7 @@ const togglemode = () => {
         abouttext="aboututils"
         mode={mode}
         togglemode={togglemode}
+        enable={enable}
       />
 
       <Crs title="Textutils App" 
