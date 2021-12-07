@@ -34,8 +34,8 @@ export default function Crs(props) {
               value={text}
               onChange={handlechange}
               style={{
-                backgroundColor: props.mode === "dark" ? "grey" : "white",
-              }}
+                backgroundColor: props.mode === "dark" ? "#404040" : "white",
+              color: props.mode === "dark" ? "white" : "black" }}
               id="myBox"
               rows="8"
             ></textarea>
